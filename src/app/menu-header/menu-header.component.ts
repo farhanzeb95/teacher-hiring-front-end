@@ -15,15 +15,11 @@ export class MenuHeaderComponent implements OnInit {
     this.router.navigate(['']);
   }
 
-  onAboutUsClick() {
+  onPackagesClick() {
     this.router.navigate(['/about-us']);
   }
 
-  onInfoClick() {
-    this.router.navigate(['/info']);
-  }
-
-  onBlogClick() {
+  onGalleryClick() {
     this.router.navigate(['/blog']);
   }
 

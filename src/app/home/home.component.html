@@ -1,65 +1,54 @@
-<div fxLayout="column" fxFlexFil>
-  <app-menu-header></app-menu-header>
-  <mat-card>
-    <mat-carousel timings="200ms ease-in" [autoplay]="true" interval="6000" color="white">
-      <mat-carousel-slide *ngFor="let picture of headerSliderPics; let i = index" [image]="picture?.image"
-        overlayColor="#ffffff" [hideOverlay]="false">
-      </mat-carousel-slide>
-    </mat-carousel>
-  </mat-card>
-  <div class="container" fxLayout="row wrap" fxLayoutAlign="space-arround center">
-    <div class="info-container" fxLayout="column" fxFlex="70">
-      <h2 class="heading">
-        What do we do?
-      </h2>
-      <small class="description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make
-        a
-        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
-
-      </small>
+<app-menu-header></app-menu-header>
+<div class="header-image">
+</div>
+<div fxLayout="column" fxLayoutAlign="center center" class="body">
+  <h3>Welcome to</h3>
+  <h1>THE PLACE OF ENJOYMENT</h1>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div fxLayout="column" class="p-4">
+      <div class="body-image-container">
+        <img src="../../assets//visit-our-galary.jpg">
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <p class="visit-galary-info">VISIT OUT GALARY</p>
+        <button mat-button class="info-button">INFO</button>
+      </div>
     </div>
-    <div fxFlex="30">
-      <mat-card class="image-card">
-        <img class="image-style" src="../../assets/card-1.png" />
-      </mat-card>
+    <div fxLayout="column" class="p-4">
+      <div class="body-image-container">
+        <img src="../../assets//events-schedule.jpg">
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <p class="visit-galary-info">EVENTS SCHEDULE</p>
+        <button mat-button class="info-button">INFO</button>
+      </div>
+    </div>
+    <div fxLayout="column" class="p-4">
+      <div class="body-image-container">
+        <img src="../../assets/book-package.jpg">
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <p class="visit-galary-info">BOOK A PACKAGE</p>
+        <button mat-button class="info-button">INFO</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="info-container">
+  <div>
+    <img class="info-image" src="../../assets/info-1.jpg">
+  </div>
+  <div class="info-heading" fxLayout="column">
+    <div>
+      <h6>Never ending enjoyment</h6>
+      <h2>ENJOY THE VACATION TIME</h2>
+    </div>
+    <div class="info-text">
+      <p>Completely remodeled and new for 2022, the new management is bringing you a
+        Playa Pool Club
+        facility with all
+        the amenities and more of a private club, but without the expensive bond to join. Explore our membership
+        options, see upcoming events, and view our gallery to learn more about the plans for our new facility.</p>
     </div>
   </div>
 </div>

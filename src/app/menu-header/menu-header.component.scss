@@ -1,20 +1,84 @@
 .menu-button {
-  color: #bcc7c6;
+  font-size: x-large;
+  font-family: "Brush Script MT", cursive;
 }
 .menu-button:hover {
-  opacity: 0.5;
-  border: 1px solid #bcc7c6;
-  color: white;
+  color: #00516f;
 }
-.header-card {
-  background-color: #6a9277;
-  border-radius: 2px;
-}
+
 .book-now-button {
-  border-radius: 5px;
-  background-color: yellow;
-  color: black;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: gray;
+  font-family: "Brush Script MT", cursive;
+  font-size: x-large;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
-.book-now-button:hover {
-  animation: blinker 1s linear infinit;
+
+.book-now-button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.book-now-button:active {
+  color: #000;
+}
+
+.book-now-button:active:after {
+  background: transparent;
+}
+
+.book-now-button:hover:before {
+  opacity: 1;
+}
+
+.book-now-button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00516f;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
