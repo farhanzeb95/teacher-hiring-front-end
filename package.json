@@ -23,12 +23,13 @@
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
     "@ngmodule/material-carousel": "^0.6.0",
+    "nth-check": "^2.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.901.13",
+    "@angular-devkit/build-angular": "^13.1.4",
     "@angular/cli": "~9.1.9",
     "@angular/compiler-cli": "~9.1.11",
     "@types/jasmine": "~3.5.0",
