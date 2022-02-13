@@ -17,7 +17,6 @@ import { BookingComponent } from './booking/booking.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -35,7 +34,6 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [
-    MatCarouselModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
